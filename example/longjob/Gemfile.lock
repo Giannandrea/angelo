@@ -1,6 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
     angelo (0.1.14)
       mime-types
       reel
@@ -13,9 +15,17 @@ GEM
       celluloid-io (>= 0.13.0.pre)
       redis
     coderay (1.1.0)
+    domain_name (0.5.20190701)
+      unf (>= 0.0.5, < 1.0.0)
     hitimes (1.2.2)
-    http (0.6.1)
+    http (3.0.0)
+      addressable (~> 2.3)
+      http-cookie (~> 1.0)
+      http-form_data (>= 2.0.0.pre.pre2, < 3)
       http_parser.rb (~> 0.6.0)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    http-form_data (2.3.0)
     http_parser.rb (0.6.0)
     method_source (0.8.2)
     mime-types (2.3)
@@ -27,6 +37,7 @@ GEM
       slop (~> 3.4)
     pry-nav (0.2.3)
       pry (~> 0.9.10)
+    public_suffix (3.1.1)
     redis (3.1.0)
     reel (0.5.0)
       celluloid (>= 0.15.1)
@@ -38,6 +49,9 @@ GEM
     tilt (2.0.1)
     timers (3.0.1)
       hitimes
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.7)
     websocket_parser (0.1.6)
 
 PLATFORMS
